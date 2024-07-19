@@ -1,0 +1,48 @@
+2024-07-10 12:50:00 [INFO] Question: What are the columns
+
+2024-07-10 12:50:00 [INFO] Running PandasAI with openai LLM...
+2024-07-10 12:50:00 [INFO] Prompt ID: 29bc839b-5de9-4d4e-87bb-85804a5f5eb3
+2024-07-10 12:50:00 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-10 12:50:00 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-10 12:50:00 [INFO] Executing Step 1: CacheLookup
+2024-07-10 12:50:01 [INFO] Executing Step 2: PromptGeneration
+2024-07-10 12:50:01 [INFO] Using prompt: <dataframe>
+dfs[0]:2747x20
+ORDERNUMBER,QUANTITYORDERED,PRICEEACH,ORDERLINENUMBER,SALES,ORDERDATE,DAYS_SINCE_LASTORDER,STATUS,PRODUCTLINE,MSRP,PRODUCTCODE,CUSTOMERNAME,PHONE,ADDRESSLINE1,CITY,POSTALCODE,COUNTRY,CONTACTLASTNAME,CONTACTFIRSTNAME,DEALSIZE
+10133,30,79.37,3,2213.38,19/11/2018,1666,Shipped,Trains,88,S18_2319,Collectable Mini Designs Co.,5181899130,1785 First Street,Torino,31000,France,Sommer,Mary,Large
+10307,97,42.26,10,2259.72,18/03/2018,2714,On Hold,Planes,81,S24_1046,Daedalus Designs Imports,2969816685,2678 Kingston Rd.,Glen Waverly,EC2 5NT,Japan,Donnermeyer,Dan,Small
+10194,77,151.17,12,1536.57,10/08/2018,3331,Cancelled,Vintage Cars,116,S18_2949,Handji Gifts& Co,6753308718,Smagsloget 45,Reggio Emilia,10100,Belgium,Pfalzheim,Dominique,Medium
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What are the columns
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-10 12:50:01 [INFO] Executing Step 3: CodeGenerator
+2024-07-10 12:50:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-07-10 12:50:01 [ERROR] Pipeline failed on step 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: open_ai_**********_key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
